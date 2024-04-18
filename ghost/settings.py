@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
-SECRET_KEY = 'f7+u)(_p=g&h@o0nca+n^s#e9*+jht080d*i$valfz@-nr$sz@'
+SECRET_KEY = 'o^##d7ye3kzc%o@6a2=r(tr0f-z*pneedo+e8#ok!ry(37y6ol'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -22,6 +22,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1', 
     '[::1]',
     'ghost-production-9bd8.up.railway.app',
+    '*',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
