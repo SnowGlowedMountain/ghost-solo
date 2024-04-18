@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Solanel';
-    src: url('/staticfonts/solanel/SolanelTrial-Black.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-Black.otf') format('opentype');
     font-weight: 900;
     /* Black */
 }
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-BlackItalic.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-BlackItalic.otf') format('opentype');
     font-weight: 900;
     /* Black */
     font-style: italic;
@@ -15,14 +15,14 @@
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-Bold.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-Bold.otf') format('opentype');
     font-weight: 700;
     /* Bold */
 }
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-BoldItalic.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-BoldItalic.otf') format('opentype');
     font-weight: 700;
     /* Bold */
     font-style: italic;
@@ -30,14 +30,14 @@
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-Light.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-Light.otf') format('opentype');
     font-weight: 300;
     /* Light */
 }
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-LightItalic.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-LightItalic.otf') format('opentype');
     font-weight: 300;
     /* Light */
     font-style: italic;
@@ -45,14 +45,14 @@
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-Medium.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-Medium.otf') format('opentype');
     font-weight: 500;
     /* Medium */
 }
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-MediumItalic.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-MediumItalic.otf') format('opentype');
     font-weight: 500;
     /* Medium */
     font-style: italic;
@@ -60,14 +60,14 @@
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-Regular.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-Regular.otf') format('opentype');
     font-weight: 400;
     /* Regular */
 }
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-RegularItalic.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-RegularItalic.otf') format('opentype');
     font-weight: 400;
     /* Regular */
     font-style: italic;
@@ -75,14 +75,14 @@
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-Thin.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-Thin.otf') format('opentype');
     font-weight: 100;
     /* Thin */
 }
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-ThinItalic.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-ThinItalic.otf') format('opentype');
     font-weight: 100;
     /* Thin */
     font-style: italic;
@@ -90,14 +90,14 @@
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-UltraThin.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-UltraThin.otf') format('opentype');
     font-weight: 200;
     /* UltraThin */
 }
 
 @font-face {
     font-family: 'Solanel';
-    src: url('/static/fonts/solanel/SolanelTrial-UltraThinItalic.otf') format('opentype');
+    src: url('/fonts/solanel/SolanelTrial-UltraThinItalic.otf') format('opentype');
     font-weight: 200;
     /* UltraThin */
     font-style: italic;
@@ -105,89 +105,89 @@
 
 @font-face {
     font-family: 'Juana Black';
-    src: url('/static/fonts/juana/Juana-Black.otf') format('opentype');
+    src: url('/fonts/juana/Juana-Black.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Juana Black Italic';
-    src: url('/static/fonts/juana/Juana-BlackIt.otf') format('opentype');
+    src: url('/fonts/juana/Juana-BlackIt.otf') format('opentype');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Juana Bold';
-    src: url('/static/fonts/juana/Juana-Bold.otf') format('opentype');
+    src: url('/fonts/juana/Juana-Bold.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Juana Bold Italic';
-    src: url('/static/fonts/juana/Juana-BoldIt.otf') format('opentype');
+    src: url('/fonts/juana/Juana-BoldIt.otf') format('opentype');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Juana Extra Light';
-    src: url('/static/fonts/juana/Juana-ExtraLight.otf') format('opentype');
+    src: url('/fonts/juana/Juana-ExtraLight.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Juana Extra Light Italic';
-    src: url('/static/fonts/juana/Juana-ExtraLightIt.otf') format('opentype');
+    src: url('/fonts/juana/Juana-ExtraLightIt.otf') format('opentype');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Juana Light';
-    src: url('/static/fonts/juana/Juana-Light.otf') format('opentype');
+    src: url('/fonts/juana/Juana-Light.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Juana Light Italic';
-    src: url('/static/fonts/juana/Juana-LightIt.otf') format('opentype');
+    src: url('/fonts/juana/Juana-LightIt.otf') format('opentype');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Juana Medium';
-    src: url('/static/fonts/juana/Juana-Medium.otf') format('opentype');
+    src: url('/fonts/juana/Juana-Medium.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Juana Medium Italic';
-    src: url('/static/fonts/juana/Juana-MediumIt.otf') format('opentype');
+    src: url('/fonts/juana/Juana-MediumIt.otf') format('opentype');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Juana Regular';
-    src: url('/static/fonts/juana/Juana-Regular.otf') format('opentype');
+    src: url('/fonts/juana/Juana-Regular.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Juana Regular Italic';
-    src: url('/static/fonts/juana/Juana-RegularIt.otf') format('opentype');
+    src: url('/fonts/juana/Juana-RegularIt.otf') format('opentype');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Juana Semi Bold';
-    src: url('/static/fonts/juana/Juana-SemiBold.otf') format('opentype');
+    src: url('/fonts/juana/Juana-SemiBold.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Juana Semi Bold Italic';
-    src: url('/static/fonts/juana/Juana-SemiBoldIt.otf') format('opentype');
+    src: url('/fonts/juana/Juana-SemiBoldIt.otf') format('opentype');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Juana light';
-    src: url('/static/fonts/juana/Juana-Thin.otf') format('opentype');
+    src: url('/fonts/juana/Juana-Thin.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Juana light Italic';
-    src: url('/static/fonts/juana/Juana-ThinIt.otf') format('opentype');
+    src: url('/fonts/juana/Juana-ThinIt.otf') format('opentype');
     font-style: italic;
 }
 
