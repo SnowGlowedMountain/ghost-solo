@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
-SECRET_KEY = os.environ('DJANGO_SECRET_KEY')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -105,7 +105,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',  # Your database name
         'USER': 'postgres',  # Your database username
-        'PASSWORD': os.environ('POSTGRES_PW'),  # Your database password
+        'PASSWORD': os.environ.get('POSTGRES_PW'),  # Your database password
         'HOST': 'roundhouse.proxy.rlwy.net',  # Your database host
         'PORT': '23282',  # Your database port
     }
@@ -161,8 +161,8 @@ CKEDITOR_UPLOAD_PATH = 'uploads/'
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-AWS_ACCESS_KEY_ID = os.environ('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ('AWS_SECRET_ACCESS_KEY')
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = 'austinhomolka'
 AWS_S3_REGION_NAME = 'us-west-2'
 AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
