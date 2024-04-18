@@ -1,0 +1,62 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load humanize %}
+{% block title %}
+    Articles
+{% endblock %}
+{% block content %}
+
+<section id="hero" class="sub-page-banner">
+
+        <img src="{% static 'img/aquila-del-mare.webp' %}" alt="Blog"
+            style="position: absolute; z-index: 0; height: 100%; width: 100%; object-fit: cover; top: 0; right: 0; left: 0; bottom: 0;">
+
+        <div class="bg-gradient-video"></div>
+
+        <div class="hero-container container">
+
+            <div class="discover">
+
+                <h2>Blog</h2>
+
+                <a href="#Blog">
+                    <svg width="25" height="25" viewBox="0 0 40 40" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M32.4946 13.3148L19.9996 25.4948L7.50458 13.3148C7.28135 13.0968 6.98165 12.9747 6.66958 12.9747C6.35751 12.9747 6.05781 13.0968 5.83458 13.3148C5.72649 13.4207 5.64061 13.5472 5.58199 13.6867C5.52336 13.8262 5.49316 13.976 5.49316 14.1273C5.49316 14.2787 5.52336 14.4285 5.58199 14.568C5.64061 14.7075 5.72649 14.8339 5.83458 14.9398L19.1271 27.8998C19.3605 28.1274 19.6736 28.2547 19.9996 28.2547C20.3256 28.2547 20.6386 28.1274 20.8721 27.8998L34.1646 14.9423C34.2734 14.8363 34.36 14.7096 34.419 14.5696C34.4781 14.4297 34.5086 14.2793 34.5086 14.1273C34.5086 13.9754 34.4781 13.825 34.419 13.685C34.36 13.545 34.2734 13.4183 34.1646 13.3123C33.9413 13.0943 33.6417 12.9722 33.3296 12.9722C33.0175 12.9722 32.7178 13.0943 32.4946 13.3123V13.3148Z"
+                            fill="white" />
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+    <span id="Blog"></span>
+    <section id="articles">
+        <div class="articles-container container">
+            <div class="articles">
+                <div class="container properties-container">
+                    {% for blog in blogs %}
+                    <!-- Article START -->
+                    <div class="article property">
+                        <a href="{{ blog.slug }}">
+                            <img src="{{ blog.thumbnail.url }}" alt="{{ blog.title }}">
+                        </a>
+                        <h5>{{ blog.headline }}</h5>
+                        <div>
+                            <div>
+                                <a href="{{ blog.slug }}">Read Article</a>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Article STOP -->
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

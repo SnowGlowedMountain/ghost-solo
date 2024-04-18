@@ -1,0 +1,2476 @@
+@font-face {
+    font-family: 'Solanel';
+    src: url('/staticfonts/solanel/SolanelTrial-Black.otf') format('opentype');
+    font-weight: 900;
+    /* Black */
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-BlackItalic.otf') format('opentype');
+    font-weight: 900;
+    /* Black */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-Bold.otf') format('opentype');
+    font-weight: 700;
+    /* Bold */
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    /* Bold */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-Light.otf') format('opentype');
+    font-weight: 300;
+    /* Light */
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    /* Light */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-Medium.otf') format('opentype');
+    font-weight: 500;
+    /* Medium */
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    /* Medium */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-Regular.otf') format('opentype');
+    font-weight: 400;
+    /* Regular */
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    /* Regular */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-Thin.otf') format('opentype');
+    font-weight: 100;
+    /* Thin */
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-ThinItalic.otf') format('opentype');
+    font-weight: 100;
+    /* Thin */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-UltraThin.otf') format('opentype');
+    font-weight: 200;
+    /* UltraThin */
+}
+
+@font-face {
+    font-family: 'Solanel';
+    src: url('/static/fonts/solanel/SolanelTrial-UltraThinItalic.otf') format('opentype');
+    font-weight: 200;
+    /* UltraThin */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Juana Black';
+    src: url('/static/fonts/juana/Juana-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Juana Black Italic';
+    src: url('/static/fonts/juana/Juana-BlackIt.otf') format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Juana Bold';
+    src: url('/static/fonts/juana/Juana-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Juana Bold Italic';
+    src: url('/static/fonts/juana/Juana-BoldIt.otf') format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Juana Extra Light';
+    src: url('/static/fonts/juana/Juana-ExtraLight.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Juana Extra Light Italic';
+    src: url('/static/fonts/juana/Juana-ExtraLightIt.otf') format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Juana Light';
+    src: url('/static/fonts/juana/Juana-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Juana Light Italic';
+    src: url('/static/fonts/juana/Juana-LightIt.otf') format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Juana Medium';
+    src: url('/static/fonts/juana/Juana-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Juana Medium Italic';
+    src: url('/static/fonts/juana/Juana-MediumIt.otf') format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Juana Regular';
+    src: url('/static/fonts/juana/Juana-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Juana Regular Italic';
+    src: url('/static/fonts/juana/Juana-RegularIt.otf') format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Juana Semi Bold';
+    src: url('/static/fonts/juana/Juana-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Juana Semi Bold Italic';
+    src: url('/static/fonts/juana/Juana-SemiBoldIt.otf') format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Juana light';
+    src: url('/static/fonts/juana/Juana-Thin.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Juana light Italic';
+    src: url('/static/fonts/juana/Juana-ThinIt.otf') format('opentype');
+    font-style: italic;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black-1: #020202;
+    --black-2: #202020;
+    --white-1: #FFFFFF;
+    --white-2: #F5F5F5;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Solanel', sans-serif;
+    background-color: var(--black-1);
+    position: relative;
+    font-weight: 300;
+}
+
+
+#bgsec {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 90vh;
+    z-index: -1;
+    display: none;
+}
+
+#bgsec img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+}
+
+#bgsec div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 95%;
+}
+
+header, section, footer {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 90;
+    transition: 0.2s all ease;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 74px;
+}
+
+.leftHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftHeader img {
+    height: 42px;
+}
+
+.midHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    position: relative;
+    height: 100%;
+}
+
+.midHeader>div:nth-child(3) {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.midHeader>div:nth-child(3):hover+.header-expansion {
+    display: flex;
+}
+
+.midHeader>div:nth-child(3) .underline {
+    bottom: 24px;
+}
+
+.midHeader>div>a {}
+
+div:has(.underline) {
+    position: relative;
+}
+
+div:has(.underline):hover>.underline {
+    /* left: 0; */
+    /* right: 0; */
+    /* transform: translate(-00%, -0%); */
+    max-width: 100%;
+}
+
+.underline {
+    background-color: white;
+    position: absolute;
+    bottom: -3px;
+    height: 1px;
+    max-width: 0;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    transition: 0.26s all ease-in-out;
+}
+
+.header-expansion {
+    position: absolute !important;
+    background-color: rgba(0, 0, 0, .70);
+    padding: 25px;
+    padding-right: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 90%;
+    left: 223px;
+    display: none;
+    align-items: flex-start;
+}
+
+.header-expansion:hover {
+    display: flex;
+}
+
+.rightHeader {}
+
+#hero {
+    height: 110vh;
+    position: relative;
+}
+
+.sub-page-banner {
+    overflow: hidden;
+    height: 72vh !important;
+}
+
+.hero-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+    z-index: 15;
+}
+
+.discover h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: 'Juana';
+}
+
+.discover>a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    transition: 0.6s all ease;
+}
+
+.discover>a:hover {
+    background-color: white;
+}
+
+.discover>a:hover>svg path {
+    fill: black !important;
+}
+
+#hero video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hero .bg-gradient-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: radial-gradient(50.06% 50.06% at 50% 49.94%, rgba(0, 0, 0, .14) 0%, rgba(0, 0, 0, .14) 100%);
+    width: 100%;
+}
+
+#listings {
+    background-color: var(--black-1);
+}
+
+.listings-container {
+    padding: 80px 0;
+    position: relative;
+}
+
+.listings {
+    width: 100%;
+    height: 650px;
+}
+
+.listing {
+    display: flex;
+    height: 650px;
+    align-items: center;
+    gap: 4%;
+    justify-content: center;
+    position: absolute;
+}
+
+.current-listing .rightListing {
+    opacity: 1;
+}
+
+.current-listing .leftListing {
+    opacity: 1;
+}
+
+.leftListing {
+    height: 100%;
+    width: 58%;
+}
+
+.leftListing img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.rightListing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* Adjusts items distribution */
+    align-items: start;
+    /* Aligns items to the start of the cross axis */
+    height: 100%;
+    /* Ensures .rightListing takes full height of its parent */
+    gap: 24px;
+    width: 50%;
+    transition: 0.4s all ease;
+}
+
+
+.rightListing>div:nth-child(1) {
+    font-size: 18px;
+}
+
+.rightListing>h4 {
+    font-size: 32px;
+    font-family: 'Juana Light';
+}
+
+.rightListing>span {
+    opacity: 0.5;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+.rightListingPrice {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.rightListing>p {
+    font-size: .875rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.alink {
+    height: 50px;
+    width: 150px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    transition: .6s all ease;
+}
+
+
+.alink:hover {
+    background-color: white;
+    color: var(--black-1);
+}
+
+.listing-options {
+    position: absolute;
+    bottom: 10%;
+    left: 65%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    z-index: 30;
+    font-size: 12px;
+}
+
+.listing-options>div {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.selected-listing {
+    opacity: 1 !important;
+}
+
+.featured-listing-p {
+    font-weight: 100;
+}
+
+.featured-listing-div {
+    font-weight: 300;
+}
+
+.featured-listing-span {
+    font-weight: 300;
+}
+
+#austin {
+    background-color: var(--black-1);
+    padding: 80px 0;
+}
+
+.austin-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.austinLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 46%;
+}
+
+.austinLeft>h4 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-family: 'Juana Light';
+}
+
+@media only screen and (max-width: 768px) {
+    .austinLeft > h4 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;  /* Assuming you want to adjust line-height as well */
+    }
+}
+
+
+.austinLeft>P {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+
+.austinRight {
+    width: 46%;
+}
+
+.austinRight img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+#testimonials {
+    background-color: var(--black-1);
+    padding: 70px 0;
+}
+
+.testimonials-container {
+    background-color: var(--black-1);
+}
+
+.testimonials-container>h2 {
+    font-size: 56px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Juana Light';
+}
+
+.actual-testimonials {
+    margin: 60px auto !important;
+    max-width: 1200px;
+}
+
+.testimonials-container .alink {
+    width: 208px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    background-color: var(--black-2);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 0px;
+    width: 25%;
+    text-align: center;
+}
+
+.swiper-slide>div {
+    font-size: 24px;
+    font-family: 'Juana';
+    font-weight: 400;
+}
+
+.swiper-slide>p {
+    width: 75%;
+    height: 96px;
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+#work {
+    height: 660px;
+    background-image: url("img/bg.jpeg");
+    background-position: center;
+    background-size: 100% auto;
+    position: relative;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width:1100px) {
+    #work {
+        background-size: auto 100%;
+    }
+}
+
+.curtain {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .24);
+    z-index: 10;
+}
+
+.work-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 11;
+}
+
+.work-container>div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 67%;
+    max-width: 500px;
+}
+
+.work-container h2 {
+    font-size: 56px;
+    font-family: 'Juana Light';
+}
+
+.work-container p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    line-height: 1.6rem;
+}
+
+.work-container .alink {
+    width: 198px;
+}
+
+footer {
+    position: relative;
+}
+
+.footer-bg{
+    position: absolute;
+    inset: 0;
+    background-color: var(--black-1);
+}
+
+.footer-address {
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    position: relative;
+    z-index: 50;
+    background-color: var(--black-1);
+    min-height: 80vh;
+    padding-top: 160px;
+}
+
+.footerTop {
+    display: flex;
+}
+
+.footerLeft img {
+    height: 42px;
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    align-items: flex-start;
+}
+
+.footerLeft>div {
+    opacity: 0.8;
+}
+
+.footer-container h5 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    opacity: 1 !important;
+    font-family: 'Juana';
+    font-weight: 400;
+}
+
+.footerLeft>*:last-child {
+    margin-top: -10px;
+}
+
+.footerRight {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+}
+
+.footerRight .places {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.places {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.places>a {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 1 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all ease;
+}
+
+.places>a:hover {
+    transform: scale(1.1);
+}
+
+.places a img {
+    height: 60%;
+}
+
+.links {
+    display: flex;
+    opacity: 0.8;
+}
+
+.links>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 140px;
+    align-items: flex-start;
+}
+
+.footer-container>p {
+    opacity: 0.8;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.footerLine {
+    background-color: rgba(192, 192, 192, 0.4);
+    height: 1px;
+    width: 100%;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding-bottom: 40px;
+}
+
+.footerBottom>div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 300;
+}
+
+.footerBottom img {
+    height: 28px;
+}
+
+.burger {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+
+
+#properties {
+    background-color: var(--black-1);
+    padding: 120px 0;
+}
+
+.properties-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 90px;
+    padding-bottom: 120px;
+}
+
+.property {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.property>a:nth-child(1) {
+    width: 100%;
+    aspect-ratio: 1.4;
+    overflow: hidden;
+}
+
+.property img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.6s all ease;
+}
+
+.div1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 8px;
+    font-weight: 300;
+}
+
+.div1 h5 {
+    font-family: 'Juana Light';
+    font-size: 20px;
+}
+
+.div2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div2>div:nth-child(1) {
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: .875rem;
+    line-height: 1.5rem;
+}
+
+.div2>div:nth-child(2) {
+    background-color: var(--black-2);
+    padding: 8px;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.div3 {
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: .875rem;
+    line-height: 1.5rem;
+}
+
+.div4 {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 7px;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.property:hover>a:nth-child(1) img {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width:768px) {
+    .property {
+        width: 95%;
+    }
+
+    .properties-container {
+        justify-content: center;
+    }
+}
+
+#about {
+    background-color: var(--black-1);
+    padding: 120px 0;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.aboutTop {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutLeft {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutLeft img {
+    width: 85%;
+}
+
+.aboutRight {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 47%;
+}
+
+.aboutRight .places {
+    gap: 35px;
+    margin-top: 20px;
+}
+
+.aboutRight h2 {
+    font-size: 3rem;
+    font-family: 'Juana Light';
+}
+
+.ab2 {
+    color: var(--white-2);
+    opacity: .7;
+    font-size: 20px;
+    font-family: 'Juana';
+    font-weight: 400;
+}
+
+.aboutRight h5 {
+    color: var(--white-2);
+    opacity: .7;
+    font-size: 20px;
+    font-family: 'Juana';
+    font-weight: 400;
+}
+
+.about-line-height {
+    line-height: .6rem;
+    font-weight: 300;
+}
+
+.uwau {
+    opacity: 0.5;
+}
+
+.aboutRight>div:nth-child(4) {
+    margin-top: -10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.aboutRight>div:nth-child(3) {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.uwau:nth-child(7) {
+    margin-top: -10px;
+}
+
+.aboutBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 88%;
+}
+
+.aboutBottom h2 {
+    font-size: 3rem;
+    font-family: 'Juana Light';
+}
+
+@media (max-width: 767px) {
+    .aboutBottom h2 {
+        font-size: 2.2rem; /* Set the font size to 2rem on mobile devices */
+    }
+}
+
+.aboutBottom p {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 200;
+
+}
+
+.aboutBottom p+div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.read-more {
+    cursor: pointer;
+    display: flex;
+    margin-top: -20px;
+}
+
+.clamped-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /* Number of lines to display */
+    -webkit-line-clamp: 4;
+    /* Change '3' to the number of lines you want */
+}
+
+
+
+@media only screen and (max-width:768px) {
+    .aboutTop {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aboutLeft {
+        width: 95%;
+    }
+
+    .aboutLeft img {
+        width: 100%;
+    }
+
+    .aboutRight {
+        width: 95%;
+    }
+
+    .aboutRight h2 {
+        font-size: 32px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 0;
+    }
+
+    .footerLeft{
+        width: 100%;
+    }
+
+    .footerRight>h5:nth-child(3){
+        order: -1;
+    }
+}
+/* Was previously called tests */
+#testimonials {
+    background-color: var(--black-1);
+    padding: 70px 0;
+}
+
+.tests-container {}
+
+.actualTests {
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 70px 0;
+    width: 49.5%;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(32 32 32);
+}
+
+.test:nth-child(2n+1) {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+
+.test {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+
+.test:nth-child(9) {
+    border-bottom: 0;
+}
+
+.test:nth-child(10) {
+    border-bottom: 0;
+}
+
+.test h5 {
+    font-family: 'Juana Regular';
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.test p {
+    width: 85%;
+    height: 96px;
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    font-weight: 200;
+    opacity: .7;
+}
+
+@media only screen and (max-width:768px) {
+    .test {
+        width: 100%;
+        border-right: 0 !important;
+    }
+
+    .test:nth-child(9) {
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+    }
+}
+
+#contact {
+    background-color: var(--black-1);
+    padding: 50px 0;
+}
+
+#contact iframe {
+    filter: saturate(0);
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container form {
+    background-color: var(--black-2);
+    padding: 30px 0;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.contact-container form>* {
+    width: 90%;
+}
+
+.contact-container h2 {
+    font-family: 'Juana Regular';
+    font-weight: 300;
+    font-size: 40px;
+    margin: 40px 0;
+    margin-top: 20px;
+}
+
+.contact-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.contact-div>div {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    width: 48%;
+    gap: 20px;
+}
+
+.contact-div>div input {
+    border: none;
+    border-bottom: 1px #6b7280 solid;
+    flex: 1;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 21px;
+    background-color: transparent;
+    color: white;
+}
+
+::placeholder {
+    color: #6b7280;
+    font-size: 21px;
+    font-family: 'Solanel';
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.contact-container textarea {
+    border: none;
+    border-bottom: 1px #6b7280 solid;
+    font-size: 21px;
+    background-color: transparent;
+    color: white;
+    height: 160px;
+}
+
+.contact-container form>div:nth-child(5) input {
+    width: 137px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-container form>div:nth-child(5) input:hover {
+    background-color: white;
+    color: black;
+}
+
+.check-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check-div label {
+    font-size: 14px;
+}
+
+.check-div input {
+    height: 20px;
+    width: 20px;
+    background-color: var(--black-1);
+}
+
+@media only screen and (max-width:1200px) {
+    .contact-div>div input {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .contact-div {
+        flex-direction: column;
+    }
+
+    .contact-div>div input {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .contact-div>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-div>div>* {
+        width: 97%;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .contact-container h2 {
+        margin: 0;
+    }
+}
+
+#info {
+    padding: 70px 0;
+    background-color: var(--black-1);
+}
+
+.info-container>div {
+    width: 95%;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+
+.info-container>div:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.204);
+}
+
+.info-container>div>div {
+    height: 129px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    min-width: 33%;
+}
+
+.info-container>div>div:nth-child(2) {
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.info-container>div>div:nth-child(4) {
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.info-container>div>div:nth-child(5) {
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.info-container>div>div:nth-child(6) {
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.info-container>div>div>* {
+    margin-left: 30px;
+}
+
+.info-container>div>div>div:nth-child(1) {
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+.info-container>div>div>div:nth-child(2) {
+    font-family: 'Juana Regular';
+    font-size: 32px;
+    font-weight: 300;
+}
+
+#abg {
+    background-image: url("img/newbg.jpeg");
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 200px;
+    background-position: center;
+}
+
+#abg div {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#abg img {
+    height: 25px;
+}
+
+#details {
+    background-color: var(--black-1);
+    padding: 80px 0;
+}
+
+.details-container {
+    display: flex;
+    align-items: center;
+    /* This will vertically center the children */
+    height: 100%;
+    /* Ensure it takes full height of its parent or set a specific height */
+}
+
+.austin-gap {
+    gap: 6rem;
+}
+
+.details-container .leftListing {
+    width: 50%;
+}
+
+.details-container .rightListing .rightListingPrice {
+    /* margin: 20px 0; */
+    font-family: 'Juana Regular';
+    font-size: 24px;
+}
+
+.yt-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.816);
+    display: flex;
+    align-items: center;
+    z-index: 350;
+    display: none;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.anx {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#listing-hero {
+    height: 90vh;
+    position: relative;
+}
+
+#listing-hero .swiper-slide {
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+#listing-hero .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#listing-hero .swiper {
+    height: 100%;
+    margin-top: -19.5px;
+}
+
+.listing-hero-container {
+    position: relative;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: white;
+}
+
+.seeall {
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    z-index: 100;
+    width: 103px;
+    cursor: pointer;
+}
+
+.photos-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.886);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 350;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    display: none;
+}
+
+.photos-modal>* {
+    max-width: 1200px;
+    width: 90%;
+}
+
+.photos-modal>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photosx {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.photosx img {
+    height: 25px;
+}
+
+@media only screen and (max-width:768px) {
+    .details-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .details-container>* {
+        width: 100% !important;
+    }
+
+    .details-container>.rightListing>*:nth-child(1) {
+        display: none;
+    }
+
+    .info-container>div {
+        border: none;
+        height: auto;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .info-container>div>div {
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        padding: 20px 0;
+        height: auto;
+        border-left: none !important;
+        border-right: none !important;
+        min-width: 49%;
+    }
+
+    .info-container>div>div:nth-child(2n+1) {
+        border-right: 1px solid rgba(255, 255, 255, 0.25) !important;
+    }
+
+    .info-container>div>div:nth-child(2n+2) {
+        border-right: none !important;
+    }
+
+
+    .info-container>div>div>div:nth-child(1) {
+        font-size: 10px;
+    }
+
+    .info-container>div>div>div:nth-child(2) {
+        font-size: 20px;
+    }
+}
+
+#videos {
+    padding: 120px 0;
+    background-color: var(--black-1);
+}
+
+.videos-container {
+    max-width: 1200px;
+    /* Adjust based on your preference */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 20px;
+    /* Add some padding around the videos */
+
+}
+
+@media only screen and (max-width:768px) {
+    .videos-container {
+        padding: 0;
+    }
+
+    #listing-hero {
+        height: 400px !important;
+    }
+}
+
+.videos {
+    /* Use Flexbox to layout video items */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* This will space your videos nicely */
+    gap: 20px;
+    /* Adjusts the gap between rows and columns */
+}
+
+.video {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Juana Light";
+    font-size: 28px;
+    cursor: pointer;
+    /* Set the width to less than 33.33% to account for margin/padding */
+    width: calc(33.33% - 20px);
+    /* Adjust 20px based on your actual gap */
+    position: relative;
+    /* For absolute positioning of the play button */
+}
+
+.video>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.6;
+}
+
+.video img {
+    width: 100%;
+    height: 100%;
+}
+
+.video>div:nth-child(1)>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.video>div:nth-child(1)>div img {
+    height: 30px;
+}
+
+@media only screen and (max-width:768px) {
+    .videos {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .video {
+        width: 95%;
+        font-size: 2rem;
+        gap: 10px;
+    }
+}
+
+#articles {
+    padding: 120px 0;
+    background-color: var(--black-1);
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article h5 {
+    font-family: "Juana Light";
+    font-size: 2rem;
+    padding-top: 16px;
+}
+
+.article img {
+    width: 100%;
+}
+
+.article>div {
+    display: flex;
+}
+
+@media only screen and (max-width:768px) {
+    .articles {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .article {
+        width: 95%;
+        gap: 10px;
+    }
+}
+
+/* Featured Listings on home page */
+#featuredListings {
+    background-color: transparent;
+    /* Had a bug couldn't figure out so i set color fixed in the html style tag */
+}
+
+.featured-listings-container {
+    padding: 80px 0;
+    position: relative;
+    background-color: transparent;
+}
+
+@media (max-width: 767px) {
+    .featured-listings-container {
+        padding: 40px 0;
+    }
+}
+
+.featuredListings {
+    width: 100%;
+    height: 650px;
+}
+
+.featuredListing {
+    display: flex;
+    height: 650px;
+    align-items: center;
+    gap: 4%;
+    justify-content: center;
+    position: absolute;
+    /* background-color: var(--black-1); */
+}
+
+/* Add to your existing CSS */
+.featuredListing {
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity change */
+    opacity: 0; /* Start with hidden to prevent flash on load */
+}
+
+.featured-current-listing {
+    opacity: 1; /* Fully visible when active */
+}
+
+  
+  
+
+
+.featured-current-listing {
+    z-index: 10;
+}
+
+.featured-current-listing .featuredRightListing {
+    opacity: 1;
+}
+
+.featured-current-listing .featuredLeftListing {
+    opacity: 1;
+}
+
+.featuredLeftListing {
+    height: 100%;
+    width: 58%;
+    opacity: 0;
+}
+
+.featuredLeftListing img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.featuredRightListing {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 33%;
+    transition: 0.4s all ease;
+    opacity: 0;
+}
+
+.featuredRightListing>div:nth-child(1) {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.featuredRightListing>h4 {
+    font-size: 32px;
+    font-family: 'Juana Light';
+}
+
+@media only screen and (max-width: 768px) {
+    .featuredRightListing > h4 {
+        font-size: 2.2rem;  /* Convert 32px to rem if needed */
+    }
+}
+
+.featuredRightListing>span {
+    opacity: 0.5;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.featuredRightListingPrice {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.featuredRightListing>p {
+
+    font-size: .875rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+}
+
+.featuredRightListing .alink:hover {}
+
+.featured-listing-options {
+    position: absolute;
+    bottom: 10%;
+    left: 65%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    z-index: 30;
+    font-size: 12px;
+    
+}
+
+
+.featured-listing-options>div {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.featured-selected-listing {
+    opacity: 1 !important;
+}
+
+.austin-video-hover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.6s all ease;
+}
+
+.video div:first-child {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.4;
+    overflow: hidden;
+}
+
+.video div:first-child img:first-of-type {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.video div:first-child:hover img:first-of-type {
+    transform: scale(1.1);
+}
+
+.video div:first-child img:last-of-type {
+    position: absolute;
+    transition: transform 0.6s ease;
+    /* Keep transition consistent without affecting the size */
+}
+
+@media only screen and (max-width:768px) {
+
+    #hero {
+        height: 100vh !important;
+    }
+
+    .midHeader {
+        display: none;
+    }
+
+    .rightHeader {
+        display: none;
+    }
+
+    .header-container {
+        height: 42px;
+    }
+
+    .discover>a {
+        height: 30px;
+        width: 30px;
+    }
+
+    .discover svg {
+        height: 20px !important;
+        width: 20px !important;
+    }
+
+    .discover h2 {
+        font-size: 40px;
+    }
+
+    .featuredListing {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+    }
+
+    .featuredLeftListing {
+        width: 90%;
+    }
+
+    .featuredRightListing {
+        width: 90%;
+    }
+
+    .featured-listing-options {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -6%;
+    }
+
+    .featuredRightListing .alink {
+        width: 100%;
+    }
+
+    .austin-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .austinLeft {
+        order: 3;
+        width: 95%;
+        gap: 35px;
+    }
+
+    .austinRight {
+        width: 95%;
+    }
+
+    .austinLeft .alink {
+        width: 100%;
+    }
+
+    .testimonials-container .alink {
+        width: 95%;
+    }
+
+    .actual-testimonials {
+        width: 95%;
+    }
+
+    .testimonials-container>h2 {
+        font-size: 2.5rem;
+    }
+
+    #testimonials {
+        padding: 20px 0 70px 0;
+    }
+
+    .work-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .work-container>div {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .work-container .alink {
+        width: 100%;
+    }
+
+    .work-container h2 {
+        font-size: 2.5rem;
+    }
+
+    #bgsec img {
+        height: 700px;
+    }
+
+    .footer-container {
+        width: 90%;
+    }
+
+    @media (max-width: 767px) {
+        .footer-container {
+            padding-top: 60px;
+        }
+    }
+
+    .footerTop {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footerRight {
+        width: 100%;
+    }
+
+    .links {
+        order: -1;
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .burger {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0, -50%);
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .85);
+        z-index: 300;
+        display: none;
+    }
+
+    .mobile-menu>div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    .mobile-expansion {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 40px;
+        font-size: 16px;
+        display: none;
+    }
+
+    .x {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width:590px) {
+    .featured-listing-options {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 3%;
+    }
+}
+
+#topArticle {
+    background-color: var(--black-1);
+    padding-top: 200px;
+}
+
+.article-container {
+    display: flex;
+    justify-content: center;
+}
+
+.article-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    max-width: 700px;
+    align-items: flex-start;
+}
+
+.article-tag {
+    height: 38px;
+    border-radius: 20px;
+    padding: 0 18px;
+    background-color: var(--black-2);
+    columns: #e6e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-info>h1 {
+    color: white;
+    font-size: 56px;
+    font-family: "Juana Light";
+    font-weight: 300;
+}
+
+.article-info>p {
+    color: #91969a;
+}
+
+.article-author {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.article-author>div:nth-child(1) img {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.article-author>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #91969a;
+}
+
+.article-author>div:nth-child(2) h6 {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Juana Light";
+}
+
+.article-author>div:nth-child(2) div {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+#article-thumbnail {
+    background-color: var(--black-1);
+}
+
+.thumbnail-container {
+    margin: 100px auto;
+}
+
+.thumbnail-container>img {
+    width: 100%;
+}
+
+#actual-article {
+    background-color: var(--black-1);
+}
+
+.actual-article-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.articleLeft {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.articleLeft p {
+    color: var(--white-2);
+    opacity: .7;
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+.articleLeft img {
+    width: 100%;
+}
+
+.articleLeft h1, .articleLeft h2, .articleLeft h3, .articleLeft h4, .articleLeft h5, .articleLeft h6 {
+    color: white;
+    font-family: "Juana Light";
+    font-weight: 300;
+}
+
+.articleLeft a {
+    position: relative;
+    display: inline-block; /* Ensures the positioning context is limited to the link */
+    text-decoration: none; /* Optionally removes the default underline */
+    color: inherit; /* Optional: ensures the link color matches the surrounding text */
+}
+
+.articleLeft a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: center; /* Sets the origin of transformation at the center */
+}
+
+.articleLeft a:hover::after {
+    transform: scaleX(1); /* Expands the line from the center to full width on hover */
+}
+
+
+
+
+
+
+
+
+.articleLeft h1 {
+    font-size: 54px;
+}
+
+.articleLeft h2 {
+    font-size: 48px;
+}
+
+.articleLeft h3 {
+    font-size: 42px;
+}
+
+.articleLeft h4 {
+    font-size: 36px;
+}
+
+.articleLeft h5 {
+    font-size: 30px;
+}
+
+.articleLeft h6 {
+    font-size: 24px;
+}
+
+.articleRight {
+    width: 20%;
+    position: relative;
+}
+
+.articleRight>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    top: 80px;
+}
+
+.articleRight img {
+    width: 100%;
+}
+
+.articleRight>div>div {
+    color: var(--white-1);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.articleRight {
+    color: var(--white-2);
+    opacity: .8;
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.articleRight a {
+    font-size: 16px;
+    color: #91969a;
+    text-decoration: underline;
+    line-height: 1.5;
+}
+
+.articleLeft ol, .articleLeft ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 22px;
+    line-height: 2.2;
+    color: var(--white-2);
+    opacity: .7;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:768px) {
+
+    .actual-article-container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .actual-article-container>* {
+        width: 95%;
+    }
+
+    #topArticle{
+        padding-top: 100px;
+    }
+
+    .articleLeft {
+        gap: 30px;
+    }
+
+    .thumbnail-container {
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .article-info {
+        width: 93%;
+    }
+
+    .thumbnail-container>img {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #article-thumbnail {
+        display: flex;
+        justify-content: center;
+    }
+
+    .articleLeft h1 {
+        font-size: 44px;
+    }
+
+    .articleLeft h2 {
+        font-size: 37px;
+    }
+
+    .articleLeft h3 {
+        font-size: 32px;
+    }
+
+    .articleLeft h4 {
+        font-size: 27px;
+    }
+
+    .articleLeft h5 {
+        font-size: 21px;
+    }
+
+    .articleLeft h6 {
+        font-size: 16px;
+    }
+
+    .article-info>h1{
+        font-size: 44px;
+    }
+
+}#iframeOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1050;
+    justify-content: center;
+    align-items: center;
+}
+
+#iframeOverlay iframe {
+    width: 80%;
+    height: 80%;
+    border: none;
+    border-radius: 10px;
+}
+
+#iframeOverlay button {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

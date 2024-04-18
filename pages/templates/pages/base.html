@@ -1,0 +1,311 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} · Austin Homolka</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}"> <!-- Update CSS link to use Django's static file handling -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}"> <!-- Update image paths -->
+    <link rel="icon" type="image/png" href="{% static 'img/fav.png' %}">
+    <link rel="manifest" href="{% static 'img/site.webmanifest' %}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <div class="mobile-menu">
+
+        <div>
+            <a href="{% url 'properties' %}">Properties</a>
+            <a href="{% url 'about' %}">About</a>
+            <a class="mobile-a">Content</a>
+            <div class="mobile-expansion">
+                <a href="{% url 'testimonials' %}">Testimonials</a>
+                <a href="{% url 'videos' %}">Videos</a>
+                <a href="{% url 'blogs' %}">Blog</a>
+            </div>
+            <a href="{% url 'contact' %}">Contact</a>
+        </div>
+
+        <div class="x">
+            <img src="{% static 'img/x.svg' %}" alt="x">
+        </div>
+
+    </div>
+
+    <header>
+
+        <div class="container header-container">
+
+            <div class="leftHeader">
+
+                <a href="{% url 'home' %}">
+
+                    <img src="{% static 'img/homolka-light.png' %}" alt="Park Place logo">
+
+                </a>
+
+            </div>
+
+            <div class="midHeader">
+
+                <div>
+                    <a href="{% url 'properties' %}">Properties</a>
+
+                    <div class="underline"></div>
+                </div>
+
+                <div>
+                    <a href="{% url 'about' %}">About</a>
+
+                    <div class="underline"></div>
+                </div>
+
+                <div>
+                    <a style="cursor: default;">Content</a>
+
+                    <div class="underline"></div>
+                </div>
+
+                <div class="header-expansion">
+
+                    <div>
+                        <a href="{% url 'testimonials' %}">Testimonials</a>
+
+                        <div class="underline"></div>
+                    </div>
+
+                    <div>
+                        <a href="{% url 'videos' %}">Videos</a>
+
+                        <div class="underline"></div>
+                    </div>
+
+                    <div>
+                        <a href="{% url 'blogs' %}">Blog</a>
+
+                        <div class="underline"></div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <a href="{% url 'contact' %}">Contact</a>
+
+                    <div class="underline"></div>
+                </div>
+
+            </div>
+
+            <div class="rightHeader">
+
+                <div>
+                    <a href="tel:12063839012" target="_blank">
+                        +1 (206) 383-9012
+                    </a>
+
+                    <div class="underline"></div>
+                </div>
+
+            </div>
+
+            <div class="burger">
+                <img src="{% static 'img/burger.svg' %}" alt="menu">
+            </div>
+
+        </div>
+
+    </header>
+
+    {% block content %}
+    <!-- Your content goes here -->
+    {% endblock %}
+
+    <section id="bgsec" class="upbg">
+        <div></div>
+    </section>
+
+    <section id="work">
+
+        <div class="curtain"></div>
+
+        <div class="work-container container">
+
+            <div>
+
+                <h2>Wørk with Austin</h2>
+
+                <p>
+                    Whether buying or selling, Austin delivers service beyond comparison. Austin works closely with each
+                    of his clients to find their ultimate property in the most premier locations, and secures the best
+                    deal. When listing a property, Austin maximizes each property’s market value with his unmatched
+                    marketing strategy.
+                </p>
+
+                <a href="{% url 'contact' %}" class="alink">Wørk with Austin</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer-container container">
+
+            <div class="footerTop">
+
+                <div class="footerLeft">
+
+                    <img src="{% static 'img/homolka-light.png' %}" alt="Park Place logo">
+
+                    <h5>Contact</h5>
+
+                    <div>
+                        <a href="tel:12063839012">+1 (206) 383-9012</a>
+
+                        <div class="underline"></div>
+                    </div>
+
+                    <div>
+                        <a href="mailto:austin@austinhomolka.com">austin@austinhomolka.com</a>
+
+                        <div class="underline"></div>
+                    </div>
+
+                    <h5>Address</h5>
+
+                    <div class="footer-address">2815 Elliott Avenue · Suite 100</div>
+
+                    <div class="footer-address">Seattle, Washington 98121</div>
+
+                </div>
+
+                <div class="footerRight">
+
+                    <h5>More Places</h5>
+
+                    <div class="places">
+                        <a href="tel:12063839012" target="_blank">
+                            <img src="{% static 'img/phone.svg' %}" alt="Phone icon">
+                        </a>
+                        <a href="mailto:austin@austinhomolka.com" target="_blank">
+                            <img src="{% static 'img/mail.svg'%}" alt="Email icon">
+                        </a>
+
+                        <a href="https://www.parkplace.us/" target="_blank">
+                            <img src="{% static 'img/network.svg' %}" alt="Website icon">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCDyBT6wWncNCNpDHsn6Fb9A" target="_blank">
+                            <img src="{% static 'img/youtube.svg' %} " alt="YouTube icon">
+                        </a>
+                    </div>
+
+                    <h5>Links</h5>
+
+                    <div class="links">
+
+                        <div>
+                            <div>
+                                <a href="{% url 'properties' %}">Properties</a>
+
+                                <div class="underline"></div>
+                            </div>
+
+                            <div>
+                                <a href="{% url 'about' %}">About</a>
+
+                                <div class="underline"></div>
+                            </div>
+
+                            <div>
+                                <a href="{% url 'testimonials' %}">Testimonials</a>
+
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <a href="{% url 'videos' %}">Videos</a>
+
+                                <div class="underline"></div>
+                            </div>
+
+
+                            <div>
+                                <a href="{% url 'blogs' %}">Blog</a>
+
+                                <div class="underline"></div>
+                            </div>
+
+                            <div>
+                                <a href="{% url 'contact' %}">Contact Us</a>
+
+                                <div class="underline"></div>
+                            </div>
+
+
+                        </div>
+
+                        <div>
+                            <div>
+                                <a href="{% url 'privacy_policy' %}">Privacy Policy</a>
+
+                                <div class="underline"></div>
+                            </div>
+
+
+                            <div>
+                                <a href="{% url 'terms_of_service' %}">Terms of Service</a>
+
+                                <div class="underline"></div>
+                            </div>
+
+                            <div>
+                                <a href="https://parkplaceapi.us/admin" target="_blank">Login</a>
+
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>
+                Austin Homolka and Park Place, a team of real estate brokers affiliated with eXp Realty, abide by equal housing opportunity laws. All material presented herein is intended for informational purposes only. Information is compiled from sources deemed reliable but is subject to errors, omissions, changes in price, condition, sale, or withdrawal without notice. No statement is made as to the accuracy of any description. Austin Homolka may receive compensation for products and services recommended on this website. Austin Homolka personally endorses products he genuinely uses, unless otherwise stated. Should you prefer him not to be compensated, you are advised to obtain these products through non-affiliated channels. All measurements and square footages related to property are approximate. This is not intended to solicit property already listed. Nothing herein shall be construed as legal, accounting, or other professional advice outside the realm of real estate brokerage.
+            </p>
+
+            <div class="footerLine"></div>
+
+            <div class="footerBottom">
+                <div>
+                    <div>Developed by</div>
+                    <img src="{% static 'img/homolka-light.png' %}" alt="Park Place logo">
+                </div>
+
+                <div>© Copyright 2024 Austin Homolka - All rights reserved.</div>
+            </div>
+
+        </div>
+
+        <div class="footer-bg"></div>
+    </footer>
+
+    <script src="{% static 'header.js' %}"></script>
+
+    
+
+</body>
+
+</html>

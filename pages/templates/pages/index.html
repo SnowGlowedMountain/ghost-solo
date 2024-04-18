@@ -1,0 +1,192 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load humanize %}
+{% block title %}
+    Home
+{% endblock %}
+{% block content %}
+    <section id="hero">
+        <video autoplay loop muted playsinline>
+            <source src="https://parkplaceapi.s3.us-west-2.amazonaws.com/members/austinhomolka/videos/AH_Home_page_video.mp4" type="video/mp4">
+        </video>
+
+        <div class="bg-gradient-video"></div>
+
+        <div class="hero-container container">
+
+            <div class="discover">
+
+                <h2>Discover Yøu</h2>
+
+                <a href="#featuredListings">
+                    <svg width="25" height="25" viewBox="0 0 40 40" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M32.4946 13.3148L19.9996 25.4948L7.50458 13.3148C7.28135 13.0968 6.98165 12.9747 6.66958 12.9747C6.35751 12.9747 6.05781 13.0968 5.83458 13.3148C5.72649 13.4207 5.64061 13.5472 5.58199 13.6867C5.52336 13.8262 5.49316 13.976 5.49316 14.1273C5.49316 14.2787 5.52336 14.4285 5.58199 14.568C5.64061 14.7075 5.72649 14.8339 5.83458 14.9398L19.1271 27.8998C19.3605 28.1274 19.6736 28.2547 19.9996 28.2547C20.3256 28.2547 20.6386 28.1274 20.8721 27.8998L34.1646 14.9423C34.2734 14.8363 34.36 14.7096 34.419 14.5696C34.4781 14.4297 34.5086 14.2793 34.5086 14.1273C34.5086 13.9754 34.4781 13.825 34.419 13.685C34.36 13.545 34.2734 13.4183 34.1646 13.3123C33.9413 13.0943 33.6417 12.9722 33.3296 12.9722C33.0175 12.9722 32.7178 13.0943 32.4946 13.3123V13.3148Z"
+                            fill="white" />
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="featuredListings" style="background-color: #020202 !important;">
+
+        <div class="featured-listings-container" style="background-color: #020202 !important;">
+
+            <div class="featuredListings" style="background-color: #020202 !important;">
+                <!-- START -->
+                {% for property in featured %}
+                    <div class="featuredListing {% if forloop.first %}featured-current-listing{% endif %}" id="listing_{{ forloop.counter }}" style="background-color: #020202 !important;">
+                        <div class="featuredLeftListing">
+                            <img src="{{ property.images.0 }}" alt="listing-img">
+                        </div>
+                        <div class="featuredRightListing">
+                            <div>Featured Listing</div>
+                            <h4>{{ property.name }}</h4>
+                            <span>{{ property.address }}</span>
+                            <div class="featuredRightListingPrice">{{ property.price|intcomma }}</div>
+                            <p class="description">{{ property.description }}</p>
+                            <a class="alink" href="{% url 'property' property.slug %}">View More</a>
+                        </div>
+                    </div>
+                
+                    {% endfor %}
+                <!-- STOP -->
+                <div class="featured-listing-options">
+                        {% for property in featured %}
+                            {% if forloop.counter <= 10 %}
+                                <div class="{% if forloop.first %}featured-selected-listing{% endif %}">
+                                    {{ forloop.counter|stringformat:"02d" }}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="austin">
+
+        <div class="container austin-container">
+
+            <div class="austinLeft">
+                <h4>Austin Homolka</h4>
+
+                <p>
+                    Austin Homolka · A Founding Partner and Owner of Park Place · A Premium Real Estate Broker. With his vast experience of working with high-end buyers and sellers, Austin has stood out for his remarkably proactive approach to every transaction. The pursuit of excellence and keen focus on client satisfaction, attributes to his high level of success.
+                </p>
+
+                <a class="alink" href="{% url 'about' %}">Read More</a>
+            </div>
+
+            <div class="austinRight">
+                <img src="https://parkplaceapi.s3.us-west-2.amazonaws.com/members/austinhomolka/images/GandA.png" alt="Austin Homolka">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="testimonials">
+
+        <div class="testimonials-container container">
+
+            <h2>Testimonials</h2>
+
+            <div class="actual-testimonials swiper">
+                <div class="swiper-wrapper">
+                    {% for testimonial in testimonials %}
+                        <div class="swiper-slide">
+                            <div>{{ testimonial.testimonial_title }}</div>
+                            <p>{{ testimonial.testimonial_body }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            
+
+            <a href="{% url 'testimonials' %}" class="alink">More Testimonials</a>
+
+        </div>
+
+    </section>
+    <script>
+        if (window.innerWidth > 768) {
+            const swiper = new Swiper('.swiper', {
+                direction: 'horizontal',
+                loop: false,
+                slidesPerView: 2,
+                spaceBetween: 20,
+                speed: 1300  // Transition speed for slide movement
+            });
+        }
+        else {
+            const swiper = new Swiper('.swiper', {
+                direction: 'horizontal',
+                loop: false,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                speed: 1300
+            });
+        }
+    </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const paginationOptions = document.querySelectorAll(".featured-listing-options div");
+        const featuredListings = document.querySelectorAll(".featuredListing");
+
+        // Ensure the first listing is visible on initial load
+        if (featuredListings.length > 0) {
+            featuredListings[0].style.opacity = 1;
+        }
+
+        paginationOptions.forEach((option, index) => {
+            option.addEventListener("click", function() {
+                paginationOptions.forEach(opt => opt.classList.remove("featured-selected-listing"));
+                featuredListings.forEach(listing => {
+                    listing.classList.remove("featured-current-listing");
+                });
+
+                option.classList.add("featured-selected-listing");
+                featuredListings[index].classList.add("featured-current-listing");
+            });
+        });
+    });        
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Function to truncate text to 25 characters on mobile
+        function truncateText() {
+            const descriptions = document.querySelectorAll('.description');
+            descriptions.forEach(desc => {
+                if (window.innerWidth <= 767) {
+                    if (desc.textContent.length > 25) {
+                        desc.textContent = desc.textContent.substr(0, 150) + '...';
+                    }
+                }
+            });
+        }
+    
+        // Run when the document is ready
+        truncateText();
+    
+        // Optional: Run when window is resized
+        window.addEventListener('resize', truncateText);
+    });
+    </script>
+    
+    
+    
+{% endblock %}

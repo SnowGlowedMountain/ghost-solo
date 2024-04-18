@@ -1,0 +1,212 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load humanize %}
+{% block title %}
+    {{ property.name }}
+{% endblock %}
+{% block content %}
+
+<!-- Media -->
+<section>
+    <div class="photos-modal">
+
+        <div>
+            <div>Photos</div>
+
+            <div class="photosx">
+                <div>Close</div>
+                <img src="{% static 'img/x.svg' %}" alt="x">
+            </div>
+        </div>
+
+        {% for image in property.images %}
+            <img src="{{ image }}" alt="photo">
+        {% endfor %}
+
+
+    </div>
+
+    <div class="yt-modal">
+        <div class="anx">
+            <img src="{% static 'img/x.svg' %}" alt="x">
+        </div>
+
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/{{ property.youtube_video_id }}" title="Utopia"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section id="listing-hero">
+    <div class="seeall">
+        <div>See all photos</div>
+        <div class="underline"></div>
+    </div>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <!-- Loop through each image in the property's images list -->
+            {% for image in property.images %}
+            <div class="swiper-slide">
+                <img src="{{ image }}" alt="{{ property.name }}">
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<section id="details">
+    <div class="details-container container austin-gap">
+        <div class="leftListing">
+            <!-- Display the first image as the main image on the details page -->
+            <img src="{{ property.images.0 }}" alt="Main image of {{ property.name }}">
+        </div>
+        <div class="rightListing">
+            <!-- css is messed up for this -->
+            <h4>{{ property.name }}</h4> 
+            <!-- <div class="rightListingPrice">{{ property.name }}</div> -->
+            <span>{{ property.address|default:"Address Not Available" }}</span>
+            <div class="rightListingPrice">${{ property.price|floatformat:"-2"|intcomma }}</div>
+            <p>{{ property.description }}</p>
+            <a class="alink" href="{% url 'contact' %}">Request Info</a>
+        </div>
+    </div>
+</section>
+
+<section id="info">
+    <div class="info-container">
+        <div>
+            <div>
+                <div>TYPE</div>
+                <div>{{ property.tag }}</div>
+            </div>
+            <div>
+                <div>BEDROOMS</div>
+                <div>{{ property.bedrooms }}</div>
+            </div>
+            <div>
+                <div>BATHROOMS</div>
+                <div>{{ property.bathrooms }}</div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>YEAR BUILT</div>
+                <div>{{ property.year_built }}</div>
+            </div>
+            <div>
+                <div>LIVING AREA</div>
+                <div>{{ property.interior_sqft }} Sq. Ft.</div>
+            </div>
+            <div>
+                <div>LOT SIZE</div>
+                <div>{{ property.lot_size }} Sq. Ft.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div id="abg">
+        <img src="{% static 'img/play.svg' %}" alt="play">
+    </div>
+</section>
+
+
+
+
+<section id="austin">
+
+        <div class="container austin-container">
+
+            <div class="austinLeft">
+                <h4>Austin Homolka</h4>
+
+                <p>
+                    Austin Homolka · A Founding Partner and Owner of Park Place · A Premium Real Estate Broker. With his vast experience of working with high-end buyers and sellers, Austin has stood out for his remarkably proactive approach to every transaction. The pursuit of excellence and keen focus on client satisfaction, attributes to his high level of success.
+                </p>
+
+                <a class="alink" href="{% url 'about' %}">Read More</a>
+            </div>
+
+            <div class="austinRight">
+                <img src="https://parkplaceapi.s3.us-west-2.amazonaws.com/members/austinhomolka/images/GandA.png" alt="Austin Homolka">
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const abgButton = document.querySelector("#abg");
+            const ytModal = document.querySelector(".yt-modal");
+            const anxButton = document.querySelector(".anx");
+    
+            if (abgButton && ytModal) {
+                abgButton.addEventListener("click", () => {
+                    ytModal.style.display = "flex";  // Show the YouTube modal
+                });
+            }
+    
+            if (anxButton && ytModal) {
+                anxButton.addEventListener("click", () => {
+                    ytModal.style.display = "none";  // Hide the YouTube modal
+                });
+            }
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const seeAllButton = document.querySelector(".seeall");
+            const photosModal = document.querySelector(".photos-modal");
+            const photosXButton = document.querySelector(".photosx");
+    
+            if (seeAllButton && photosModal) {
+                seeAllButton.addEventListener("click", () => {
+                    photosModal.style.display = "flex";  // Show the photos modal
+                });
+            }
+    
+            if (photosXButton && photosModal) {
+                photosXButton.addEventListener("click", () => {
+                    photosModal.style.display = "none";  // Hide the photos modal
+                });
+            }
+        });
+    </script>
+    
+
+
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+{% endblock %}

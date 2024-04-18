@@ -1,0 +1,130 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load humanize %}
+{% block title %}
+    {{ blog.headline }}
+{% endblock %}
+{% block content %}
+    <section id="topArticle">
+    <div class="article-container container">
+        <div class="article-info">
+            <div class="article-tag">Books</div>
+            <h1>{{ blog.headline }}</h1>
+            <!-- <p>{{ blog.subheadline|default:"Grind it out, sell like crazy, and repeat what matters." }}</p> -->
+            <div class="article-author">
+                <div>
+                    <img src="{% static 'img/austin-zoom.png' %}" alt="Austin Homolka">
+                </div>
+                <div>
+                    <h6>{{ blog.author|default:"Austin Homolka" }}</h6>
+                    <div>{{ blog.created_at|date:"F d, Y" }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="article-thumbnail">
+    <div class="thumbnail-container container">
+        <img src="{{ blog.thumbnail.url }}" alt="thumbnail">
+    </div>
+</section>
+
+<section id="actual-article">
+    <div class="actual-article-container container">
+        <div class="articleLeft">
+            {{ blog.body|safe }}
+        </div>
+        {% for ad in blog.selected_ads.all %}
+            <div class="articleRight">
+                <div>
+                    <img src="{{ ad.thumbnail.url }}" alt="Display Ad Image">
+                    <div>
+                        {{ ad.headline }}
+                    </div>
+                    <p>
+                        {{ ad.body|safe }}
+                    </p>
+                    <span>
+                        <a href="javascript:void(0);" id="activatePopupLink">{{ ad.cta_button_text }}</a>
+                    </span>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+    </section>
+
+    <!-- Overlay container for popup -->
+    <div id="iframeOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.7); z-index:1050;">
+        <iframe
+        src="https://api.leadconnectorhq.com/widget/form/1HzaQqyEJbMNZhfGxO1b"
+        style="width:80%; height:80%; border:none; border-radius:10px; position:absolute; top:10%; left:10%;"
+        id="popup-1HzaQqyEJbMNZhfGxO1b"
+        title="Book of The Day"
+        >
+        </iframe>
+        <button onclick="closeIframe()" style="position:absolute; top:5%; right:5%; font-size:30px; background:none; border:none; color:white; cursor:pointer;">&times;</button>
+    </div>
+    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+
+    <script>
+    document.getElementById('activatePopupLink').addEventListener('click', function() {
+        document.getElementById('iframeOverlay').style.display = 'block';
+    });
+
+    function closeIframe() {
+        document.getElementById('iframeOverlay').style.display = 'none';
+    }
+    </script>
+
+    <script>
+
+        let needsToBeScrolled = document.querySelector("#topArticle").offsetHeight + document.querySelector("#article-thumbnail").offsetHeight
+        let needsToBeScrolled2 = needsToBeScrolled+document.querySelector("#actual-article").offsetHeight - document.querySelector(".articleRight>div").offsetHeight
+
+        window.addEventListener("DOMContentLoaded", () => {
+            needsToBeScrolled = document.querySelector("#topArticle").offsetHeight + document.querySelector("#article-thumbnail").offsetHeight
+            needsToBeScrolled2 = needsToBeScrolled+document.querySelector("#actual-article").offsetHeight - document.querySelector(".articleRight>div").offsetHeight
+        })
+
+        window.addEventListener("resize", () => {
+            needsToBeScrolled = document.querySelector("#topArticle").offsetHeight + document.querySelector("#article-thumbnail").offsetHeight
+            needsToBeScrolled2 = needsToBeScrolled+document.querySelector("#actual-article").offsetHeight - document.querySelector(".articleRight>div").offsetHeight
+        })
+
+        window.addEventListener("scroll", () => {
+            const scrolled = window.scrollY
+
+            console.log(needsToBeScrolled2)
+            console.log(scrolled)
+
+            if(window.innerWidth<768){
+                return
+            }
+
+            if(scrolled>needsToBeScrolled2){
+                document.querySelector(".articleRight>div").style.position = "absolute"
+                document.querySelector(".articleRight>div").style.left = `unset`
+                document.querySelector(".articleRight>div").style.bottom = `0`
+                document.querySelector(".articleRight>div").style.justifyContent = `flex-end`
+                document.querySelector(".articleRight>div").style.display = `flex`
+            }
+            else{
+                document.querySelector(".articleRight>div").style.justifyContent = `flex-start`
+                if (scrolled >= document.querySelector(".articleRight").offsetTop-75) {
+                document.querySelector(".articleRight>div").style.position = "fixed"
+                document.querySelector(".articleRight>div").style.width = `${document.querySelector(".articleRight").offsetWidth}px`
+            }
+            else{
+                document.querySelector(".articleRight>div").style.position = "unset"
+                document.querySelector(".articleRight>div").style.width = `100%`
+                document.querySelector(".articleRight>div").style.left = `unset`
+            }
+            }
+
+            
+        })
+
+    </script>
+{% endblock %}
