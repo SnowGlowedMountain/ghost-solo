@@ -7,7 +7,7 @@
 {% block content %}
     <section id="hero">
         <video autoplay loop muted playsinline>
-            <source src="https://parkplaceapi.s3.us-west-2.amazonaws.com/members/austinhomolka/videos/AH_Home_page_video.mp4" type="video/mp4">
+            <source src="{% static 'img/home.mp4' %}" type="video/mp4">
         </video>
 
         <div class="bg-gradient-video"></div>
@@ -90,7 +90,7 @@
             </div>
 
             <div class="austinRight">
-                <img src="https://parkplaceapi.s3.us-west-2.amazonaws.com/members/austinhomolka/images/GandA.png" alt="Austin Homolka">
+                <img src="{% static 'img/austin.webp' %}" alt="Austin Homolka">
             </div>
 
         </div>

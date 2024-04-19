@@ -672,7 +672,7 @@ div:has(.underline):hover>.underline {
 
 #work {
     height: 660px;
-    background-image: url("img/bg.jpeg");
+    background-image: url("img/bg.webp");
     background-position: center;
     background-size: 100% auto;
     position: relative;
